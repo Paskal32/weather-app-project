@@ -15,7 +15,103 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>City</h1>
+    <div class="container content">
+      <div class="weather-app">
+        <div class="row">
+        <div class="col-5">
+            <div id="city"><h1>City</h1></div>
+            <div id="data">Tue, June 21</div>
+            </div>
+        <div class="col-7">
+            <form id="search-form">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="search"
+                  id="location-input"
+                  class="form-control"
+                  placeholder="Location"
+                  autofocus
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  class="btn btn-outline-primary"
+                  type="submit"
+                  value="🔍"
+                />
+              </div>
+               <div class="col-2">
+          <button id="current-location" class="btn btn-outline-primary">
+            📍
+          </button>
+        </div>
+            </div>
+          </form>
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-3">
+        <ul>
+            <li>
+                Time updated:
+            </li>
+            <li>
+                Humidity:
+            </li>
+            <li>
+                Wind:
+            </li>
+        </ul>
+        </div>
+        <div class="col-2">
+             <ul>
+            <li>
+                <div id="time">
+                    15:57
+                </div>
+            </li>
+            <li>
+                <div id="humidity">
+                    %
+                </div>
+            </li>
+            <li>
+                <div id="wind">
+                    m/s
+                </div>
+            </li>
+        </ul>
+        </div>
+        <div class="col-3">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="rain">
+            <div id="description">rain</div>
+        </div>
+        <div class="col-3">
+            <span id="temperature">
+                23
+            </span> <span class="degrees">
+              <a href="#" id="celsius-link"> °C </a>|
+              <a href="#" id="fahrenheit-link"> °F</a>
+            </span>
+        </div>
+        <div class="col-1">
+            <ul>
+                <li>
+                    <span id="max">°C</span>
+                </li>
+                <br />
+                <br />
+                <li>
+                    <span id="min">°C</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+      </div>
+      Project was coded by Nadiia Bulyha and is open-sourced on
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
