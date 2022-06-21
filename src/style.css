@@ -1,3 +1,78 @@
+body {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(241, 252, 254) 74.6%
+  );
+}
+
 h1 {
-  color: aqua;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  opacity: 0.8;
+  font-size: 16px;
+}
+p {
+  text-align: center;
+  opacity: 0.8;
+}
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.weather-app {
+  background-image: url(../images/sky.jpg);
+  max-width: 800px;
+  margin: 40px 40px 0 auto;
+  padding: 30px 20px 10px;
+  border: 2px solid rgb(202, 199, 199);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.weather-today {
+  margin-top: 30px;
+}
+
+.parameters {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.emoji,
+#description {
+  text-align: center;
+  font-size: 16px;
+}
+.emoji {
+  position: relative;
+  top: 10px;
+}
+#description {
+  opacity: 0.8;
+  position: relative;
+  top: 10px;
+}
+.temperature-block {
+  text-align: right;
+}
+
+#temperature {
+  text-align: center;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.degrees {
+  position: relative;
+  top: -40px;
 }
