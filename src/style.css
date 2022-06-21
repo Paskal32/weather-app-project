@@ -31,7 +31,7 @@ p {
 .weather-app {
   background-image: url(../images/sky.jpg);
   max-width: 800px;
-  margin: 40px 40px 0 auto;
+  margin: 40px 40px 0 40px;
   padding: 30px 20px 10px;
   border: 2px solid rgb(202, 199, 199);
   border-radius: 10px;
@@ -69,10 +69,10 @@ p {
   text-align: center;
   font-size: 68px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .degrees {
   position: relative;
-  top: -40px;
+  top: -50px;
 }
