@@ -1,4 +1,4 @@
-function formatDate(timestamp) {
+function formatTime(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
@@ -9,6 +9,28 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
   return `${hours}:${minutes}`;
+}
+
+function formatDate() {
+  let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  let day = days[new Date().getDay()];
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let mounth = months[new Date().getMonth()];
+  let date = new Date().getDate();
+  return `${day}, ${mounth} ${date}`;
 }
 
 function showTemperature(response) {
@@ -28,7 +50,7 @@ function showTemperature(response) {
   document.querySelector("#min").innerHTML = Math.round(
     response.data.main.temp_min
   );
-  document.querySelector("#time").innerHTML = formatDate(
+  document.querySelector("#time").innerHTML = formatTime(
     response.data.dt * 1000
   );
 }
@@ -39,4 +61,5 @@ function search(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+document.querySelector("#date").innerHTML = formatDate(new Date());
 search("London");
