@@ -49,68 +49,59 @@
             </div>
           </form>
         </div>
-    </div>    
+    </div>
+    <div class="weather-today">
     <div class="row">
-        <div class="col-3">
+        <div class="col-4">
         <ul>
             <li>
-                Time updated:
-            </li>
-            <li>
-                Humidity:
-            </li>
-            <li>
-                Wind:
-            </li>
-        </ul>
-        </div>
-        <div class="col-2">
-             <ul>
-            <li>
-                <div id="time">
+                Time updated: <span class="parameters" id="time">
                     15:57
-                </div>
+                </span>
             </li>
+            <br />
             <li>
-                <div id="humidity">
+                Humidity: <span class="parameters" id="humidity">
                     %
-                </div>
+                </span>
             </li>
             <li>
-                <div id="wind">
+                Wind: <span class="parameters" id="wind">
                     m/s
-                </div>
+                </span>
             </li>
         </ul>
         </div>
-        <div class="col-3">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="rain">
+        
+        <div class="col-4">
+            <div class="emoji"><img  src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="rain"></div>
             <div id="description">rain</div>
         </div>
-        <div class="col-3">
+        <div class="col-3 temperature-block">
             <span id="temperature">
-                23
-            </span> <span class="degrees">
-              <a href="#" id="celsius-link"> °C </a>|
-              <a href="#" id="fahrenheit-link"> °F</a>
+                23</span> <span class="degrees">
+              <a href="#" id="celsius-link">°C </a>|
+              <a href="#" id="fahrenheit-link">°F</a>
             </span>
         </div>
         <div class="col-1">
             <ul>
                 <li>
-                    <span id="max">°C</span>
+                    <span id="max">2</span>°C
                 </li>
                 <br />
+                <br />                
                 <br />
                 <li>
-                    <span id="min">°C</span>
+                    <span id="min">1</span>°C
                 </li>
             </ul>
         </div>
     </div>
         </div>
       </div>
-      Project was coded by Nadiia Bulyha and is open-sourced on
+      </div>
+      <p>Project was coded by Nadiia Bulyha and is open-sourced on</p>
     </div>
     <script src="src/app.js"></script>
   </body>
