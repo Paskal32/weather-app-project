@@ -36,13 +36,17 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 .weather-app {
-  background-image: url(../images/sky.jpg);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/384/original/sky.jpg?1656073115);
   max-width: 800px;
   margin: 40px 40px 0 40px;
   padding: 30px 20px 10px;
   border: 2px solid rgb(202, 199, 199);
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#location-input {
+  background: rgb(217, 242, 248);
 }
 
 .weather-today {
