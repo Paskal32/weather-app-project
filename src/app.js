@@ -33,7 +33,7 @@ function formatDate() {
   return `${day}, ${mounth} ${date}`;
 }
 
-function showTemperature(response) {
+function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -67,8 +67,32 @@ function showTemperature(response) {
 function search(city) {
   let apiKey = "be5d707605e5661874f71c0e2f187224";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(showWeather);
 }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#location-input").value;
+  search(city);
+}
+
+let locationForm = document.querySelector("#search-form");
+locationForm.addEventListener("submit", handleSubmit);
+
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "be5d707605e5661874f71c0e2f187224";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(showWeather);
+}
+
+function navigation() {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+let currentLocation = document.querySelector("#current-location");
+currentLocation.addEventListener("click", navigation);
 
 document.querySelector("#date").innerHTML = formatDate(new Date());
 search("London");
