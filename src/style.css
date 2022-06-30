@@ -53,8 +53,18 @@ a:hover {
   margin-top: 30px;
 }
 
+#date {
+  font-weight: 600;
+  color: rgb(72, 57, 57);
+}
+
 .parameters {
-  font-size: 18px;
+  color: #020285;
+  font-size: 16px;
+  font-weight: 600;
+}
+.time {
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -96,4 +106,26 @@ a:hover {
 .active:hover {
   color: black;
   text-decoration: none;
+}
+
+.forecast-weather {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(72, 57, 57);
+}
+
+.forecaast-day {
+  font-weight: 600;
+}
+
+.forecast-temperature {
+  color: #020285;
+}
+.forecast-temperature-min {
+  opacity: 0.8;
+}
+
+.forecast-temperature-max {
+  font-weight: 600;
 }
