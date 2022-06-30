@@ -78,9 +78,9 @@ a:hover {
   top: 10px;
 }
 #description {
-  opacity: 0.8;
+  opacity: 0.6;
   position: relative;
-  top: 10px;
+  top: -10px;
 }
 .temperature-block {
   text-align: right;
@@ -115,8 +115,11 @@ a:hover {
   color: rgb(72, 57, 57);
 }
 
-.forecaast-day {
+.forecast-day {
   font-weight: 600;
+  opacity: 0.8;
+}
+.forecast-date {
   opacity: 0.8;
 }
 
