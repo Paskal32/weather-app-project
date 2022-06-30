@@ -117,12 +117,11 @@ a:hover {
 
 .forecaast-day {
   font-weight: 600;
+  opacity: 0.8;
 }
 
 .forecast-temperature {
   color: #020285;
-}
-.forecast-temperature-min {
   opacity: 0.8;
 }
 
